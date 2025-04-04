@@ -8,7 +8,7 @@ import pickle
 from datetime import datetime
 
 DATASET_PATH = "sign_dataset"
-MODEL_PATH = "sign_language_model.h5"
+MODEL_PATH = "sign_language_model.keras"
 ENCODER_PATH = "label_encoder.pkl"
 FRAME_WIDTH = 640
 FRAME_HEIGHT = 480
