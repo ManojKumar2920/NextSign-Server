@@ -1,7 +1,7 @@
-from fastapi import FastAPI, Form, HTTPException
-from fastapi.responses import JSONResponse, FileResponse
-from fastapi.middleware.cors import CORSMiddleware
-from fastapi.staticfiles import StaticFiles
+from fastapi import FastAPI, Form, HTTPException #type: ignore
+from fastapi.responses import JSONResponse, FileResponse #type: ignore
+from fastapi.middleware.cors import CORSMiddleware #type: ignore
+from fastapi.staticfiles import StaticFiles #type: ignore
 import os
 import uuid
 import shutil
@@ -104,8 +104,8 @@ async def fix_permissions():
 @app.get("/debug/generate-test-video")
 async def generate_test_video():
     """Generate a simple test video to check if video creation works"""
-    import cv2
-    import numpy as np
+    import cv2 #type: ignore
+    import numpy as np #type: ignore
     import os
     import time
     
