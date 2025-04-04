@@ -44,7 +44,6 @@ async def generate_sign_video(text: str = Form(...)):
         if not os.path.exists(output_path):
             raise HTTPException(status_code=500, detail="Failed to generate video")
         
-        # Set file permissions to 666 (read/write for all users)
         os.chmod(output_path, 0o666)
         
         # Return both relative and absolute URLs
